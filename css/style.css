@@ -531,8 +531,7 @@ a:focus {
 
 .download_section .main-img-box img {
   width: 75%;
-  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.37));
-          filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.37));
+ 
 }
 
 .about_section {
