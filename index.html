@@ -41,7 +41,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
             <span>
-              <img src="./images/test.png" style="position:absolute;width:330px;" />
+              <img src="./images/test.png" style="width:200px;" />
               <!-- SANOOS <sup style="text-transform: lowercase !important;"><small>tech</small></sup> -->
             </span>
           </a>
@@ -69,7 +69,7 @@
                 the best
               </h2>
               <h1>
-                Mobile <br />
+                Mobile & Accessories<br />
                 Repairer
               </h1>
               <div>
@@ -117,6 +117,35 @@
 
     <!-- end slider section -->
   </div>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+        <h3 class="gallery-title">Our Works</h3>
+        <div class="row">
+            <span href="#" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-3 col-md-4 col-6 my-3">
+                <img src="images/repair/1.png" class="img-fluid card">
+                <center><b>Iphone</b></center>
+            </span>
+            <span href="#" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-3 col-md-4 col-6 my-3">
+                <img src="images/repair/2.png" class="img-fluid card">
+                <center><b>Macbook</b></center>
+            </span>
+            <span href="#" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-3 col-md-4 col-6 my-3">
+                <img src="images/repair/3.png" class="img-fluid card">
+                <center><b>Mobile</b></center>
+            </span>
+            <span href="#" data-toggle="lightbox" data-gallery="example-gallery" class="col-lg-3 col-md-4 col-6 my-3">
+                <img src="images/repair/4.png" class="img-fluid card">
+                <center><b>Consoles</b></center>
+            </span>
+      
+        </div>
+    </div>
+</div>
+</div>
+
 
   <!-- feature section -->
   <section class="feature_section layout_padding2 layout_margin">
@@ -308,28 +337,28 @@
 
 
 
-  <!-- client section -->
+
   <section class="client_section layout_margin">
     <div class="container">
       <div class="heading_container">
 
       </div>
-      <div class="client_container layout_padding2-top">
+      <div class="client_container layout_padding2-top" style="display:flex; gap:30%; flex-wrap: wrap;justify-content: space-around;">
         <div class="client-id">
-          <div class="img-box">
-            <img src="images/client.png" alt="" />
-          </div>
+       
+            <img src="images/sanoos.jpg" style="width: 300px;" alt="" />
+     
+        </div>
+        <div class="client-detail" style="text-align: center;">
           <div class="name">
             <img src="images/quote.png" alt="" />
-            <h6>
+            <h6 class="mt-3">
               Mohamed Sanoos
             </h6>
             <p>
               SANOOS<sup>tech</sup> Founder & CEO
             </p>
           </div>
-        </div>
-        <div class="client-detail">
           <p>
 
             As the CEO of SANOOS<sup>tech</sup>, I am immensely proud of the dedicated team of technicians and
@@ -343,17 +372,18 @@
 
 
           </p>
+          <div class="d-flex " style=" justify-content: space-around;">
+            <a href="contact.html">
+              Contact Us
+            </a>
+          </div>
         </div>
-        <div class="d-flex justify-content-end">
-          <a href="contact.html">
-            Contact Us
-          </a>
-        </div>
+    
       </div>
     </div>
   </section>
 
-  <!-- end client section -->
+
 
   <!-- contact section -->
   <section class="contact_section layout_padding">
@@ -497,7 +527,13 @@
       attribution: '© OpenStreetMap'
     }).addTo(map);
     var marker = L.marker([51.375360, -0.089750]).addTo(map);
-    marker.bindPopup(` SANOOS <sup style="text-transform: lowercase !important;"><small>tech</small></sup>`).openPopup();
+    marker.bindPopup(` <img src="./images/test3.png" style="height: 20px;">`).openPopup();
+  </script>
+  <script>
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({alwaysShowClose: true});
+  });
   </script>
 </body>
 

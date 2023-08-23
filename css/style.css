@@ -4,6 +4,13 @@ body {
   background-color: #ffffff;
 }
 
+.gallery-title {
+  text-align: center;
+font-weight: 800;
+margin-top: 1em;
+}
+
+
 .layout_margin {
   margin: 90px 0;
 }
